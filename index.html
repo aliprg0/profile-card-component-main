@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Profile card component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-cyan": "hsl(185, 75%, 39%)",
+              "very-dark-desaturated-blue": "hsl(229, 23%, 23%)",
+              "dark-grayish-blue": "hsl(227, 10%, 46%)",
+              "dark-gray": "hsl(0, 0%, 59%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-dark-cyan">
+    <div class="absolute mr-[50%] mb-[100%] md:mb-[80%] lg:mb-[50%]">
+      <img src="./images/bg-pattern-top.svg" alt="Background Image" />
+    </div>
+    <div class="absolute ml-[50%] mt-[100%] md:mt-[80%] lg:mt-[50%]">
+      <img src="./images/bg-pattern-bottom.svg" alt="Background Image" />
+    </div>
+    <div class="bg-white max-w-[18rem] min-h-[20rem] rounded-xl">
+      <img
+        src="./images/bg-pattern-card.svg"
+        alt="Picture of Background for Card"
+        class="rounded-t-xl"
+      />
+      <div class="flex flex-col justify-center text-center">
+        <img
+          src="./images/image-victor.jpg"
+          alt="Avatar"
+          class="rounded-full w-20 mx-[6.5rem] mt-[-3rem] border-solid border-white border-4"
+        />
+        <div class="mt-4 font-bold">
+          Victor Crest
+          <span class="font-normal text-gray-600">26</span>
+        </div>
+        <div class="text-gray-500 pt-1">London</div>
+      </div>
+
+      <div
+        class="flex flex-row justify-between px-10 py-4 font-bold text-center mt-6 border-t"
+      >
+        <div>
+          80K
+          <div class="text-sm font-normal text-slate-400">Followers</div>
+        </div>
+        <div>
+          803K
+          <div class="text-sm font-normal text-slate-400">Likes</div>
+        </div>
+        <div>
+          1.4K
+          <div class="text-sm font-normal text-slate-400">Photos</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
